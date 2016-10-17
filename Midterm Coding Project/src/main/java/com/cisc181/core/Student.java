@@ -32,7 +32,19 @@ public class Student extends Person {
     	int sectioncount = 0;
     	for (Enrollment enrollmentlist : Enrollment.getEnrollmentlist()){
     		if (enrollmentlist.getStudentID() == this.getStudentID()){
-    			sum+=enrollmentlist.getGrade();
+    			if (90<= enrollmentlist.getGrade()){
+    				sum+= 4.0;
+    			}
+    			else if (80<=enrollmentlist.getGrade()){
+    				sum+= 3.0;
+    			}
+    			else if (70<=enrollmentlist.getGrade()){
+    				sum+= 2.0;
+    			}
+    			else if (60<=enrollmentlist.getGrade()){
+    				sum+=1.0;
+    			}
+    			//sum+=enrollmentlist.getGrade();
     			sectioncount++;
     		}
     	}

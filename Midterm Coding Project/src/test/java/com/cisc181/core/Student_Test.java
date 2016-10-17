@@ -70,17 +70,17 @@ public class Student_Test {
 
 	@Test
 	public void test() {
-		//gradepoint testing for students
-		assertEquals(97.5,studentlist.get(0).getGradePoint(),0.001);
-		assertEquals(91.5,studentlist.get(1).getGradePoint(),0.001);
-		assertEquals(85.5,studentlist.get(2).getGradePoint(),0.001);
-		assertEquals(79.5,studentlist.get(3).getGradePoint(),0.001);
-		assertEquals(73.5,studentlist.get(4).getGradePoint(),0.001);
-		assertEquals(67.5,studentlist.get(5).getGradePoint(),0.001);
-		assertEquals(61.5,studentlist.get(6).getGradePoint(),0.001);
-		assertEquals(55.5,studentlist.get(7).getGradePoint(),0.001);
-		assertEquals(49.5,studentlist.get(8).getGradePoint(),0.001);
-		assertEquals(43.5,studentlist.get(9).getGradePoint(),0.001);
+		assertEquals(4.0,studentlist.get(0).getGradePoint(),0.001);
+		assertEquals(3.833,studentlist.get(1).getGradePoint(),0.001);
+		assertEquals(3,studentlist.get(2).getGradePoint(),0.001);
+		assertEquals(2.5,studentlist.get(3).getGradePoint(),0.001);
+		assertEquals(2,studentlist.get(4).getGradePoint(),0.001);
+		assertEquals(1.167,studentlist.get(5).getGradePoint(),0.001);
+		assertEquals(0.833,studentlist.get(6).getGradePoint(),0.001);
+		assertEquals(0,studentlist.get(7).getGradePoint(),0.001);
+		assertEquals(0,studentlist.get(8).getGradePoint(),0.001);
+		assertEquals(0,studentlist.get(9).getGradePoint(),0.001);
+		
 		
 		//setter testing for major
 		assertEquals(eMajor.CHEM,studentlist.get(0).getMajor());
